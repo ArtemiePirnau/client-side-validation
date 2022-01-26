@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp-2022</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <form class="form">
+        <div class="container">
+            <div class="form__inner">
+                <h1 class="form__title">
+                    Sign in to your account
+                </h1>
+                <div class="form__username-wrap">
+                    <label class="form__username-label form__label--special">Username</label>
+                    <input class="form__username-search form__input--special" name="username" type="text">
+                    <!-- <span class="form__input--error">Username cannot be blank</span> -->
+                </div>
+                <div class="form__email-wrap">
+                    <label class="form__email-label form__label--special">Email</label>
+                    <input class="form__email-search form__input--special" name="email" type="text">
+                    <!-- <span class="form__input--error">Email cannot be blank</span> -->
+                </div>
+                <div class="form__password-wrap">
+                    <div class="form__password-flex">
+                        <label class="form__password-label form__label--special">Password</label>
+                        <label class="form__password-label form__label--special form__forgot"><a href="#">Forgot your password?</a></label>
+                    </div>
+                    <input class="form__password-search form__input--special" name="password" type="password">
+                    <!-- <span class="form__input--error">Password cannot be blank</span> -->
+                </div>
+                <div class="form__checkbox-field">
+                    <label for="" class="form__checkbox-label form__label--specia">
+                        <input type="checkbox" class="form__checkbox-field">
+                        Stay signed in for a week
+                    </label>
+                </div>
+                <button class="form__btn" type="button">Continue</button>
+            </div>
+        </div>
+    </form>
+    <div class="modal__success">
+        <div class="modal__success-info">
+            <img class="modal__success-img" src="images/checked.png" alt="checked image">
+            <h1 class="modal__success-title">Great!</h1>
+            <p class="modal__success-message">
+                Your invitation successfully send!
+            </p>
+            <a class="modal__success-btn" href="#">
+                Close
+            </a>
+        </div>
+    </div>
+</body>
+<script src="js/app.min.js"></script>
+
+</html>
