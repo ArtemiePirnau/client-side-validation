@@ -7,12 +7,6 @@ export const js = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-        .pipe(webpack({
-            mode: app.isBuild ? "production" : "development",
-            output: {
-                filename: "app.min.js"
-            }
-        }))
         .pipe(app.gulp.dest(app.path.build.js))
         .pipe(app.plugins.browsersync.stream());
 };
